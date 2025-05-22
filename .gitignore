@@ -1,21 +1,59 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
+# Build artifacts
+*.o
+*.obj
 *.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
+*.a
+*.lib
+*.dll
+*.exe
 *.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# CMake build directory
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
 
-# Go workspace file
-go.work
+# Ninja build files
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+
+# Qt specific
+moc_*
+qrc_*
+ui_*
+
+# Code::Blocks
+*.depend
+*.layout
+
+# CLion / JetBrains
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad
+*.xcodeproj
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor/IDE backups
+*~
+*.swp
+*.bak
+*.tmp
+
+# Logs
+*.log
