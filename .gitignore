@@ -1,13 +1,3 @@
-# Build artifacts
-*.o
-*.obj
-*.so
-*.a
-*.lib
-*.dll
-*.exe
-*.out
-
 # CMake build directory
 build/
 CMakeFiles/
