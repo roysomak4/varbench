@@ -163,7 +163,8 @@ int main(int argc, char **argv) {
     if (fn > 0) {
         outf << "variant\te_vaf\te_cov\te_hiaf\te_hicov\te_gene\te_hgvs_c\te_hgvs_p\te_transcript\to_vaf\to_cov\to_hiaf\to_hicov\to_gene\to_hgvs_c\to_hgvs_p\to_transcript\n";
         std::string fn_var_str;
-        outf << join(fn_variants, "\n", fn_var_str) << "\n";    
+        fn_var_str = join(fn_variants, "\n");
+        outf << fn_var_str << "\n";    
     } else {
         outf << "none" << "\n";
     }
@@ -171,8 +172,9 @@ int main(int argc, char **argv) {
     outf << "True positive variants\n";
     if (tp > 0) {
         outf << "variant\te_vaf\te_cov\te_hiaf\te_hicov\te_gene\te_hgvs_c\te_hgvs_p\te_transcript\to_vaf\to_cov\to_hiaf\to_hicov\to_gene\to_hgvs_c\to_hgvs_p\to_transcript\n";
-        std::string tp_var_str; 
-        outf << join(tp_variants, "\n", tp_var_str) << "\n";
+        std::string tp_var_str;
+        tp_var_str = join(tp_variants, "\n");
+        outf << tp_var_str << "\n";
     } else {
         outf << "none" << "\n";
     }
@@ -180,8 +182,9 @@ int main(int argc, char **argv) {
     outf << "False positive variants\n";
     if (fp > 0) {
         outf << "variant\te_vaf\te_cov\te_hiaf\te_hicov\te_gene\te_hgvs_c\te_hgvs_p\te_transcript\to_vaf\to_cov\to_hiaf\to_hicov\to_gene\to_hgvs_c\to_hgvs_p\to_transcript\n";
-        std::string fp_var_str; 
-        outf << join(fp_variants, "\n", fp_var_str) << "\n";
+        std::string fp_var_str;
+        fp_var_str = join(fp_variants, "\n");
+        outf << fp_var_str << "\n";
     } else {
         outf << "none" << "\n";
     }   
