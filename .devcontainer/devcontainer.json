@@ -4,12 +4,7 @@
 		"context": "."
 	},
 
-	"features": {
-		"ghcr.io/devcontainers/features/git:1": {
-            "version": "latest",
-            "ppa": "false"
-        }
-    },
+	"name": "C/C++ Development Container",
 
 	"capAdd": ["SYS_PTRACE"],
 	"securityOpt": ["seccomp=unconfined"],
